@@ -1,0 +1,14 @@
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\bin\Debug\net8.0\SubscribeExample.exe
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\bin\Debug\net8.0\SubscribeExample.deps.json
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\bin\Debug\net8.0\SubscribeExample.runtimeconfig.json
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\bin\Debug\net8.0\SubscribeExample.dll
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\bin\Debug\net8.0\SubscribeExample.pdb
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\SubscribeExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\SubscribeExample.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\SubscribeExample.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\SubscribeExample.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\SubscribeExample.dll
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\refint\SubscribeExample.dll
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\SubscribeExample.pdb
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\SubscribeExample.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\CSharpBasic\SubscribeExample\obj\Debug\net8.0\ref\SubscribeExample.dll

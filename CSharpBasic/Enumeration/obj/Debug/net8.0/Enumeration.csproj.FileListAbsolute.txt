@@ -1,0 +1,14 @@
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\bin\Debug\net8.0\Enumeration.exe
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\bin\Debug\net8.0\Enumeration.deps.json
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\bin\Debug\net8.0\Enumeration.runtimeconfig.json
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\bin\Debug\net8.0\Enumeration.dll
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\bin\Debug\net8.0\Enumeration.pdb
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\Enumeration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\Enumeration.AssemblyInfoInputs.cache
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\Enumeration.AssemblyInfo.cs
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\Enumeration.csproj.CoreCompileInputs.cache
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\Enumeration.dll
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\refint\Enumeration.dll
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\Enumeration.pdb
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\Enumeration.genruntimeconfig.cache
+C:\Users\user\Documents\GitHub\CSharpBasic\Enumeration\obj\Debug\net8.0\ref\Enumeration.dll
