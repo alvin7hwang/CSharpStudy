@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj": {}
+    "C:\\Users\\user\\Documents\\GitHub\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj": {}
   },
   "projects": {
-    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj": {
+    "C:\\Users\\user\\Documents\\GitHub\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Documents\\GitHub\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj",
         "projectName": "DynamicArray",
-        "projectPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj",
-        "packagesPath": "C:\\Users\\M24\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\obj\\",
+        "projectPath": "C:\\Users\\user\\Documents\\GitHub\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Documents\\GitHub\\ETL_Unity11\\CSharpBasic\\DynamicArray\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\M24\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

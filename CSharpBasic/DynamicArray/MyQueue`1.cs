@@ -2,9 +2,13 @@
 
 namespace DynamicArray
 {
-    internal class MyDynamicArray<T> : IEnumerable<T>
+    /// <summary>
+    /// 회전배열로 구현한 Queue.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    internal class MyQueue<T> : IEnumerable<T>
     {
-        internal MyDynamicArray()
+        internal MyQueue()
         {
             _data = new T[DEFAULT_SIZE];
         }
@@ -16,41 +20,14 @@ namespace DynamicArray
         /// </summary>
         /// <param name="capacity"></param>
         /// <exception cref="ArgumentOutOfRangeException"></exception>
-        internal MyDynamicArray(int capacity)
+        internal MyQueue(int capacity)
         {
             if (capacity < 0)
                 throw new ArgumentOutOfRangeException(nameof(capacity));
 
             _data = new T[capacity];
         }
-
-
-        // 인덱스 검색
-        // O(1)
-        internal T this[int index]
-        {
-            get
-            {
-                // 1. index 가 유효한지 검사 (현재 아이템 갯수를 초과한다면 인덱스 초과 예외)
-                // 2. 데이터배열에서 index 접근하여 값을 반환.
-
-                // 인덱스가 음수이거나 현재 아이템수를 넘어간다면
-                if (index < 0 || index >= _size)
-                    throw new IndexOutOfRangeException();
-
-                return _data[index];
-            }
-            set
-            {
-                // 1. index 가 유효한지 검사 (현재 아이템 갯수를 초과한다면 인덱스 초과 예외)
-                // 2. 데이터배열에서 index 접근하여 값을 대입.
-
-                if (index < 0 || index >= _size)
-                    throw new IndexOutOfRangeException();
-
-                _data[index] = value;
-            }
-        }
+                
 
         internal int Capacity
         {
@@ -62,8 +39,21 @@ namespace DynamicArray
                     throw new Exception("Capacity is less than items count...");
 
                 T[] tmp = new T[value];
-                Array.Copy(_data, tmp, _size);
+
+                // Before
+                // 4 ㅁ ㅁ 2 3
+                // head == 3
+                // tail == 0
+                for (int i = 0; i < _size; i++)
+                {
+                    tmp[i] = _data[(_head + i) % _data.Length];
+                }
+
+                // After
+                // 2 3 4 ㅁ ㅁ
                 _data = tmp;
+                _head = 0;
+                _tail = _size - 1;
             }
         }
 
@@ -71,11 +61,13 @@ namespace DynamicArray
 
         int _size; // 실제 가지고있는 아이템 수
         T[] _data; // 아이템들이 들어있는 배열
+        int _head; // 가장 앞 인덱스
+        int _tail; // 가장 뒤 인덱스
         const int DEFAULT_SIZE = 4;
 
         // 삽입 
         // O(N) - 최악의 경우 : 공간이 부족할때.
-        internal void Add(T item)
+        internal void Enqueue(T item)
         {
             // 1. 새 아이템을 추가할 공간이 남아있는지 확인
             // 2. 공간이 없다면, 현재 공간의 두배크기 배열을 생성
@@ -86,65 +78,37 @@ namespace DynamicArray
             // 아이템수와 배열길이가 같다면 공간 부족한것임
             if (_size == _data.Length)
             {
-                T[] tmp = new T[_size * 2];
-
-                Array.Copy(_data, tmp, _size);
-                //for (int i = 0; i < _data.Length; i++)
-                //{
-                //    tmp[i] = _data[i];
-                //}
-
-                _data = tmp;
+                Capacity *= 2;
             }
 
-            _data[_size] = item;
+            _tail = (_tail + 1) % _data.Length;
+            _data[_tail] = item;
             _size++;
         }
 
-        internal T Find(Predicate<T> match)
-        {
-            for (int i = 0; i < _size; i++)
-            {
-                if (match.Invoke(_data[i]))
-                    return _data[i];
-            }
-
-            return default;
-        }
-
-        // 순회 검색
-        // O(N) - 최악의 경우 : 못찾았을때
-        internal int FindIndex(T item)
-        {
-            // 1. 전체 순회하면서 찾으려는 아이템과 동일한 아이템이 있는지 확인
-            // 2. 있으면 현재 인덱스 반환, 없으면 에러코드 반환.
-
-            for (int i = 0; i < _size; i++)
-            {
-                if (_data[i].Equals(item))
-                    return i;
-            }
-
-            return -1;
-        }
-
         // 삭제
-        // O(N) - 최악의 경우 : 젤 앞에꺼 지우는거
-        internal void RemoveAt(int index)
+        // O(1)
+        internal T Dequeue()
         {
-            // 1. 삭제하려는 인덱스가 유효한지 검사
-            // 2. 삭제하려는 인덱스 뒤부터 마지막까지를 순회하면서 한칸씩 앞으로 당김
+            // 1. 삭제할 아이템이 있는지
+            // 2. 젤 마지막 아이템 삭제 및 반환
             // 3. 총아이템수 하나 감소
 
-            if (index < 0 || index >= _size)
+            if (_size == 0)
                 throw new IndexOutOfRangeException();
 
-            for (int i = index; i < _size - 1; i++)
-            {
-                _data[i] = _data[i + 1];
-            }
+            T item = _data[_head];
+            _data[_head] = default;
+            _head = (_head + 1) % _data.Length;
+            return item;
+        }
 
-            _size--;
+        internal T Peek()
+        {
+            if (_size == 0)
+                throw new IndexOutOfRangeException();
+
+            return _data[_head];
         }
 
         /// <summary>
@@ -171,17 +135,21 @@ namespace DynamicArray
         public struct Enumerator : IEnumerator<T>
         {
             // 생성자를 통한 의존성 주입
-            public Enumerator(MyDynamicArray<T> myDynamicArray)
+            public Enumerator(MyQueue<T> myDynamicArray)
             {
-                _myDynamicArray = myDynamicArray;
+                _myQueue = myDynamicArray;
                 _index = -1;
             }
 
-            public T Current => _myDynamicArray[_index];
+            // 4 ㅁ ㅁ 2 3 
+            // head : 3
+            // index : 2
+            // head + index = 5...  mod Capacity -> 0
+            public T Current => _myQueue._data[(_myQueue._head + _index) % _myQueue._data.Length];
 
-            object IEnumerator.Current => _myDynamicArray[_index];
+            object IEnumerator.Current => _myQueue._data[(_myQueue._head + _index) % _myQueue._data.Length];
 
-            MyDynamicArray<T> _myDynamicArray;
+            MyQueue<T> _myQueue;
             int _index;
 
             /// <summary>
@@ -198,7 +166,7 @@ namespace DynamicArray
             public bool MoveNext()
             {
                 // 다음으로 넘어갈 인덱스 존재하는지?
-                if (_index < _myDynamicArray._size - 1)
+                if (_index < _myQueue._size - 1)
                 {
                     _index++;
                     return true;

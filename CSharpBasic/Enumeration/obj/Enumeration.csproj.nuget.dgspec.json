@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\Enumeration\\Enumeration.csproj": {}
+    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\Enumeration\\Enumeration.csproj": {}
   },
   "projects": {
-    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\Enumeration\\Enumeration.csproj": {
+    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\Enumeration\\Enumeration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\Enumeration\\Enumeration.csproj",
+        "projectUniqueName": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\Enumeration\\Enumeration.csproj",
         "projectName": "Enumeration",
-        "projectPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\Enumeration\\Enumeration.csproj",
+        "projectPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\Enumeration\\Enumeration.csproj",
         "packagesPath": "C:\\Users\\M24\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\Enumeration\\obj\\",
+        "outputPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\Enumeration\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\M24\\AppData\\Roaming\\NuGet\\NuGet.Config",

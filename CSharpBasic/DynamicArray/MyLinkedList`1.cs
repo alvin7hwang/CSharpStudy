@@ -8,9 +8,9 @@ using System.Xml.Linq;
 
 namespace DynamicArray
 {
-    internal class Node<T>
+    internal class MyLinkedListNode<T>
     {
-        public Node(MyLinkedList<T> owner, T value)
+        public MyLinkedListNode(MyLinkedList<T> owner, T value)
         {
             Owner = owner;
             Value = value;
@@ -19,16 +19,16 @@ namespace DynamicArray
 
         internal MyLinkedList<T> Owner;
         internal T Value;
-        internal Node<T> Next;
-        internal Node<T> Prev;
+        internal MyLinkedListNode<T> Next;
+        internal MyLinkedListNode<T> Prev;
     }
 
     internal class MyLinkedList<T> : IEnumerable<T>
     {
-        internal Node<T> First => _first;
-        internal Node<T> Last => _last;
+        internal MyLinkedListNode<T> First => _first;
+        internal MyLinkedListNode<T> Last => _last;
 
-        private Node<T> _first, _last;
+        private MyLinkedListNode<T> _first, _last;
         private int _size;
 
 
@@ -37,7 +37,7 @@ namespace DynamicArray
         /// </summary>
         /// <param name="node"> 기준 노드 </param>
         /// <param name="value"> 기준노드 앞에 삽입하려는 값</param>
-        internal void AddBefore(Node<T> node, T value)
+        internal void AddBefore(MyLinkedListNode<T> node, T value)
         {
             // 1. node 가 현재 linkedlist 에 속해있는지 검증
             // 2. 새 노드 생성
@@ -54,7 +54,7 @@ namespace DynamicArray
             if (node.Owner != this)
                 throw new InvalidOperationException("Node does not belong to this LinkedList");
 
-            Node<T> newNode = new Node<T>(this, value);
+            MyLinkedListNode<T> newNode = new MyLinkedListNode<T>(this, value);
 
             if (node.Prev != null)
             {
@@ -76,12 +76,12 @@ namespace DynamicArray
         /// </summary>
         /// <param name="node"> 기준 노드 </param>
         /// <param name="value"> 기준노드 뒤에 삽입하려는 값</param>
-        internal void AddAfter(Node<T> node, T value)
+        internal void AddAfter(MyLinkedListNode<T> node, T value)
         {
             if (node.Owner != this)
                 throw new InvalidOperationException("Node does not belong to this LinkedList");
 
-            Node<T> newNode = new Node<T>(this, value);
+            MyLinkedListNode<T> newNode = new MyLinkedListNode<T>(this, value);
 
             if (node.Next != null)
             {
@@ -100,7 +100,7 @@ namespace DynamicArray
 
         internal void AddFirst(T value)
         {
-            Node<T> newNode = new Node<T>(this, value);
+            MyLinkedListNode<T> newNode = new MyLinkedListNode<T>(this, value);
 
             if (_first != null)
             {
@@ -118,7 +118,7 @@ namespace DynamicArray
 
         internal void AddLast(T value)
         {
-            Node<T> newNode = new Node<T>(this, value);
+            MyLinkedListNode<T> newNode = new MyLinkedListNode<T>(this, value);
 
             if (_last != null)
             {
@@ -139,12 +139,12 @@ namespace DynamicArray
         /// </summary>
         /// <param name="match"> 탐색 조건 </param>
         /// <returns> 찾은 노드 </returns>
-        internal Node<T> Find(Predicate<T> match)
+        internal MyLinkedListNode<T> Find(Predicate<T> match)
         {
             // 1. First 노드 참조 가져옴 
             // 2. 현재 탐색중인 노드의 Next 가 없을때까지 순회하면서 match 조건 체크
 
-            Node<T> tmp = _first;
+            MyLinkedListNode<T> tmp = _first;
 
             while (tmp != null)
             {
@@ -162,9 +162,9 @@ namespace DynamicArray
         /// </summary>
         /// <param name="match"> 탐색 조건 </param>
         /// <returns> 찾은 노드 </returns>
-        internal Node<T> FindLast(Predicate<T> match)
+        internal MyLinkedListNode<T> FindLast(Predicate<T> match)
         {
-            Node<T> tmp = _last;
+            MyLinkedListNode<T> tmp = _last;
 
             while (tmp != null)
             {
@@ -177,7 +177,7 @@ namespace DynamicArray
             return default;
         }
 
-        internal bool Remove(Node<T> node)
+        internal bool Remove(MyLinkedListNode<T> node)
         {
             // 1. node 가 null 인지 확인
             // 2. node 가 현재 linkedlist 에 속한지 검증
@@ -252,7 +252,7 @@ namespace DynamicArray
             object IEnumerator.Current => Current;
 
             MyLinkedList<T> _list;
-            Node<T> _currentNode;
+            MyLinkedListNode<T> _currentNode;
 
             public void Dispose()
             {

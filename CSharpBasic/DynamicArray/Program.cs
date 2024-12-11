@@ -67,7 +67,7 @@ namespace DynamicArray
             MyLinkedList<char> myLinkedListOfChar = new MyLinkedList<char>();
             myLinkedListOfChar.AddFirst('a');
             myLinkedListOfChar.AddLast('b');
-            Node<char> node = myLinkedListOfChar.FindLast(x => x == 'a');
+            MyLinkedListNode<char> node = myLinkedListOfChar.FindLast(x => x == 'a');
             myLinkedListOfChar.AddAfter(node, 'c');
 
             foreach (var item in myLinkedListOfChar)

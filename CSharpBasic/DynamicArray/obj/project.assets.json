@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj",
-      "projectName": "DynamicArray",
-      "projectPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\DynamicArray.csproj",
+      "projectUniqueName": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\Collections.csproj",
+      "projectName": "Collections",
+      "projectPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\Collections.csproj",
       "packagesPath": "C:\\Users\\M24\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\Study\\ETL_Unity11\\CSharpBasic\\DynamicArray\\obj\\",
+      "outputPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\M24\\AppData\\Roaming\\NuGet\\NuGet.Config",

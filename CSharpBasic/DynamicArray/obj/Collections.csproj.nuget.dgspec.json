@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\SubscribeExample\\SubscribeExample.csproj": {}
+    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\Collections.csproj": {}
   },
   "projects": {
-    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\SubscribeExample\\SubscribeExample.csproj": {
+    "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\Collections.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\SubscribeExample\\SubscribeExample.csproj",
-        "projectName": "SubscribeExample",
-        "projectPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\SubscribeExample\\SubscribeExample.csproj",
+        "projectUniqueName": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\Collections.csproj",
+        "projectName": "Collections",
+        "projectPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\Collections.csproj",
         "packagesPath": "C:\\Users\\M24\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\SubscribeExample\\obj\\",
+        "outputPath": "C:\\Users\\M24\\Desktop\\상태머신 구조 학습용\\ETL_Unity11-main (1)\\ETL_Unity11-main\\CSharpBasic\\DynamicArray\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\M24\\AppData\\Roaming\\NuGet\\NuGet.Config",
